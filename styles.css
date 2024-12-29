@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
-
 body {
     font-family: Roboto;
     height: 100vh;
@@ -27,8 +25,10 @@ ul,a {
 }
 
 .block-two-image {
-    width: 100px;
-    height: 100px;
+    height: 150px;
+    outline: solid #3882f6;
+    border-radius: 6px;
+    margin-bottom: 8px;
 }
 
 .block-three {
@@ -57,7 +57,7 @@ ul,a {
     padding: 5px 30px 5px;
     border: 0px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .button.one {
@@ -65,10 +65,10 @@ ul,a {
 }
 
 .button.two {
-    border: solid 1px;
+    border: solid 2px;
 }
 
-/* flex implementation */
+/* flex implementation block 1 */
 
 body {
     display: flex;
@@ -83,42 +83,112 @@ ul {
 
 .block-one {
     display: flex;
+    justify-content: center;
+}
+
+.block-one-container {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    padding: 20px 0px;
+    flex: 0 1 60%;
+}
+
+.header, .block-one-info{
+    display: flex;
+    flex: 0 1 50%;
+    gap: 20px;
 }
 
 .header {
-    display: flex;
-    flex: 1;
-    width: 70%;
-    gap: 10px;
+    flex: 0 1 auto;
 }
 
-.hero.logo {
-    flex: 1;
+.hero.logo, .block-one-text-container {
     margin-right: auto;
 }
 
 .block-one-info {
-    display: flex;
-    flex: 1;
-    width: 70%;
-    gap: 20px;
     padding: 100px 0px;
 }
 
 .block-one-image{
-    align-self: center;
     text-align: center;
     align-content: center;
-    align-self: center;
+    flex: 0 1 50%;
 }
 
 .block-one-text-container{
     display: flex;
-    max-width: 450px;
     flex-wrap: wrap;
-    margin-right: auto;
+    max-width: 450px;
+    flex: 0 1 50%;
 }
 
+/* flex implementation block 2*/
+
+.block-two {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    align-items: center;
+    gap: 40px;
+}
+
+.block-two-item-container {
+    display: flex;
+    padding-bottom: 70px;
+    justify-content: center;
+    gap: 60px;
+    flex: 1 1 50% ;
+}
+
+p.gray {font-size: 16px;}
+
+.block-two-item {
+    text-align: center;
+    flex: 0 0 150px;
+}
+
+/* flex implementation block 3*/
+
+.block-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-three-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 43%;
+    padding: 70px 0px;
+}
+h4.gray {align-self: flex-end;
+    font-size: 25px;
+}
+
+/* flex implementation block 4*/
+
+.block-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.block-four-container {
+    display: flex;
+    flex: 0 1 80%;
+    padding: 50px 20px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* flex implementation footer*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
