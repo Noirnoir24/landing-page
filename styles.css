@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     height: 100vh;
     margin: 0px;
 }
@@ -26,7 +26,7 @@ ul,a {
 
 .block-two-image {
     height: 150px;
-    outline: solid #3882f6;
+    outline: solid 4px #3882f6;
     border-radius: 6px;
     margin-bottom: 8px;
 }
@@ -54,7 +54,7 @@ ul,a {
 .gray {color: #1f2937; margin: 0;}
 
 .button {
-    padding: 5px 30px 5px;
+    padding: 8px 30px 8px;
     border: 0px;
     font-weight: bold;
     font-size: 16px;
@@ -131,14 +131,14 @@ ul {
     flex-direction: column;
     padding: 40px 0px;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
 }
 
 .block-two-item-container {
     display: flex;
     padding-bottom: 70px;
     justify-content: center;
-    gap: 60px;
+    gap: 70px;
     flex: 1 1 50% ;
 }
 
@@ -160,11 +160,12 @@ p.gray {font-size: 16px;}
 .block-three-container {
     display: flex;
     flex-direction: column;
-    flex: 0 1 43%;
+    flex: 0 1 825px;
     padding: 70px 0px;
 }
 h4.gray {align-self: flex-end;
     font-size: 25px;
+    margin-right: 0.83em;
 }
 
 /* flex implementation block 4*/
@@ -178,7 +179,7 @@ h4.gray {align-self: flex-end;
 
 .block-four-container {
     display: flex;
-    flex: 0 1 80%;
+    flex: 0 1 1000px;
     padding: 50px 20px;
     justify-content: space-around;
     gap: 20px;
